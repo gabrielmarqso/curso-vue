@@ -16,6 +16,16 @@
     //fetch the products
     const { data: products } = await useFetch('https://fakestoreapi.com/products')
 
+    useHead({
+        title: 'ShopApp | Produtos',
+        meta: [
+            {
+                name: 'Descrição',
+                content: 'Lista de produtos'
+            }
+        ]
+    })
+
 </script>
 
 <style lang="scss" scoped>
